@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <title>Հարսանյաց հրավեր</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin:0; padding:0; }
+
+    body {
+      font-family: 'Raleway', sans-serif;
+      background: #ffffff; /* полностью белый фон */
+      color: #5c002e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      animation: fadeInBody 2s ease-in;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .invitation {
+      background: #ffffff; /* белая карточка */
+      padding: 50px 40px;
+      border-radius: 20px;
+      max-width: 700px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(212,106,146,0.15);
+      border: 2px solid #ffb6c1; /* розовая рамка */
+      animation: slideUp 1.2s ease-out;
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3em;
+      color: #d46a92; /* розовый заголовок */
+      margin-bottom: 15px;
+    }
+
+    .names {
+      font-size: 2em;
+      font-weight: bold;
+      color: #8b004f;
+      margin-bottom: 10px;
+    }
+
+    .date {
+      font-size: 1.5em;
+      color: #ff8ab8;
+      margin-bottom: 30px;
+    }
+
+    .countdown-section h2 {
+      color: #d46a92;
+      font-size: 1.3em;
+      margin-bottom: 10px;
+    }
+
+    #countdown {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #ff8ab8;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 36px;
+      background: linear-gradient(45deg, #ffb6c1, #ff8ab8);
+      color: #fff;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1.1em;
+      box-shadow: 0 5px 15px rgba(212,106,146,0.25);
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(45deg, #ff8ab8, #d46a92);
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .section h2 {
+      font-size: 1.5em;
+      color: #d46a92;
+      margin-bottom: 15px;
+    }
+
+    .schedule-item {
+      background: rgba(255,182,193,0.1);
+      color: #8b004f;
+      border-radius: 12px;
+      padding: 10px 20px;
+      margin: 10px auto;
+      max-width: 400px;
+    }
+
+    .location {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-top: 15px;
+      color: #ff8ab8;
+    }
+    
+
+.photo {
+  width: 100%;
+  height: 700px; /* меньше высота контейнера */
+  margin: 5px 0;  /* минимальный отступ */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(212,106,146,0.2);
+}
+
+.photo img {
+  width: 100%;
+  height: auto;       /* авто высота для полного показа */
+  min-height: 100%;   /* чтобы контейнер заполнялся */
+  object-fit: cover;
+  object-position: top center; /* поднимаем изображение полностью вверх */
+  transition: transform 0.5s ease;
+}
+
+.photo img:hover {
+  transform: scale(1.05);
+}
+
+
+  </style>
+</head>
+<body>
+
+  <div class="invitation">
+    <h1>Հարսանյաց հրավեր</h1>
+    <div class="names">Արթուր և Մարիամ</div>
+    <div class="date">25 Սեպտեմբերի 2025 թ․</div>
+
+    <div class="countdown-section">
+      <h2>⏳ Մինչ հարսանիքը մնացել է</h2>
+      <div id="countdown"></div>
+    </div>
+
+    <div class="photo">
+      <img src="https://i.postimg.cc/wvSWxLzv/Whats-App-Image-2025-08-19-at-13-34-59.jpg" alt="Фото пары">
+    </div>
+
+    <div class="photo">
+      <img src="https://i.postimg.cc/fL0KPydh/Whats-App-Image-2025-08-19-at-13-34-58.jpg" alt="Фото пары">
+    </div>
+
+    <div class="section">
+      <h2>📅 Օրվա ծրագիր</h2>
+      <div class="schedule-item">14:00 — Պսակադրություն</div>
+      <div class="schedule-item">17:30 — Հարսանեկան խնջույք</div>
+    </div>
+
+
+  <div class="section">
+        <h2>📍 Վայրեր</h2>
+        <p class="location">Պսակադրություն - Հայրավանք եկեղեցի <a href="https://maps.app.goo.gl/1EQRkioMQFRkWWZdA" class="button">Բացել քարտեզը</a></p> 
+        <div class="photo">
+          <img src="https://i.postimg.cc/Wp8nfBFz/66d1a5f9e5d29.png"
+               style="width: 100%; height: 100%; object-fit: cover; object-position: center top; border-radius: 15px;">
+        </div>
+        <p class="location">Հարսանեկան խնջույք - Ռեստորան Վան մյուզիք հոլ<a href="https://maps.app.goo.gl/o2Cwc7gGWNC9qfuq7" class="button">Բացել քարտեզը</a></p>
+        <div class="photo">
+          <img src="https://i.postimg.cc/mrVY6Mkq/29133319-2069182026430586-1681895801405571072-n.jpg"
+               style="width: 100%; height: 100%; object-fit: cover; object-position: center top; border-radius: 15px;">
+        </div>
+      </div>
+
+
+
+ <audio id="bgMusic" loop>
+  <source src="https://file.garden/aCOMiFtJdUeeq1Vy/Sting%20%26amp%3B%20Charles%20Aznavour-Love%20is%20new%20everyday%20(zaycev.net).mp3" type="audio/mpeg">
+  Ձեր զննարկիչը չի աջակցում ձայնին։
+</audio>
+
+<button onclick="toggleMusic()" style="
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffd6e8;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 30px;
+  font-weight: bold;
+  color: #8b004f;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(136, 0, 79, 0.1);
+">
+  🎵 Նվագարկել երաժշտությունը
+</button>
+
+
+    <p>Մենք շատ ուրախ ենք հրավիրելու Ձեզ և անհամբեր սպասում ենք միասին նշել մեր հարսանիքը 💕
+</p>
+    <p>Սիրով,<br><b>Արթուր և Մարիամ</b></p>
+
+  </div>
+
+<script>
+  const countdownElement = document.getElementById("countdown");
+  // Новая дата свадьбы: 25 Սեպտեմբերի 2025
+  const weddingDate = new Date("2025-09-25T00:00:00");
+
+  function updateCountdown() {
+    const now = new Date();
+    const diff = weddingDate - now;
+
+    if (diff <= 0) {
+      countdownElement.textContent = "Մեր հարսանիքն արդեն սկսվել է։ 🎉";
+      clearInterval(timer);
+      return;
+    }
+
+    const totalSeconds = Math.floor(diff / 1000);
+    const totalMinutes = Math.floor(diff / (1000 * 60));
+    const totalHours = Math.floor(diff / (1000 * 60 * 60));
+    const totalDays = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+    countdownElement.innerHTML =
+      ` ${totalDays} օր ` +
+      `${totalHours % 24} ժամ ` +
+      `${totalMinutes % 60} րոպե ` +
+      `${totalSeconds % 60} վայրկյան`;
+  }
+
+  const timer = setInterval(updateCountdown, 1000);
+  updateCountdown();
+
+
+ function toggleMusic() {
+    const music = document.getElementById('bgMusic');
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+</script>
+
+
+</body>
+</html>

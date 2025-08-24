@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <title>Հարսանյաց հրավեր</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin:0; padding:0; }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffffff; /* белый фон */
+      color: #5c002e;
+      animation: fadeInBody 1.8s ease-in;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .card {
+      background: #ffffff; /* белая карточка */
+      padding: 50px 40px;
+      border-radius: 25px;
+      max-width: 550px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(212, 106, 146, 0.15);
+      border: 2px solid #ffd6e8; /* розовая рамка */
+      animation: slideIn 1.2s ease;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3em;
+      color: #d46a92; /* розовый заголовок */
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #8b004f;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      color: #ff8ab8;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 36px;
+      background: linear-gradient(45deg, #ffb6c1, #ff8ab8);
+      color: #fff;
+      border-radius: 35px;
+      font-weight: 500;
+      text-decoration: none;
+      font-size: 1.1em;
+      box-shadow: 0 4px 15px rgba(212,106,146,0.25);
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .button:hover {
+      transform: scale(1.07);
+      background: linear-gradient(45deg, #ff8ab8, #d46a92);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Հարսանյաց հրավեր</h1>
+    <p>Սիրով հրավիրում ենք Ձեզ լինել մեր երջանկության օրվա մասնակից</p>
+    <h2><b>25 Սեպտեմբերի 2025 թ․</b></h2>
+    <a href="main.html" class="button">Բացել հրավերը</a>
+  </div>
+</body>
+</html>
